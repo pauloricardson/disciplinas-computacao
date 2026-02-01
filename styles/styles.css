@@ -4,4 +4,67 @@
     padding: 0;
     box-sizing: border-box;
     font-family: "Roboto", sans-serif;
+    text-decoration: none;
+    color: white;
+}
+
+header {
+    background: linear-gradient(to bottom, #02A9F0, #ffff);
+    color: white;
+}
+
+div.header-content {
+    display: flex;
+    flex-direction: column;
+    margin: 0 20px;
+    padding: 20px 0;
+}
+
+div.header-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+div.title h1 {
+    font-size: 2em;
+}
+
+div.title span {
+    font-size: 1em;
+}
+
+div.menu button {
+    background-color: transparent;
+    border: none;
+}
+
+div.menu button img {
+    height: 30px;
+}
+
+div.calendar {
+    width: 100%;
+    height: 150px;
+    background: linear-gradient(to bottom, #AF7DFE, #7B38EF);
+    border-radius: 10px;
+    display: flex;
+    gap: 10px;
+    padding: 20px;
+    align-items: center;
+    margin: 20px 0;
+}
+
+div.calendar img {
+    height: 70px;
+}
+
+div.calendar h2 {
+    font-size: 2em;
+    font-weight: bold;
+}
+
+div.calendar span {
+    font-size: 1em;
+    font-weight: normal;
 }
