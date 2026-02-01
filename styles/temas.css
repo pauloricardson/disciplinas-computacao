@@ -1,0 +1,56 @@
+:root {
+    --tema: #cab40c;
+}
+
+header {
+    background: linear-gradient(to bottom, var(--tema), #ffff) !important;
+    padding-bottom: 200px;
+}
+
+
+div.grid-disciplinas {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 15px;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+div.card-tema {
+    background-color: var(--tema);
+    height: 50px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.308);
+    display: flex;
+    justify-content: start;
+    margin: 15px 0;
+}
+
+div.num {
+    background-color: white;
+    height: 100%;
+    width: 100px;
+    border-radius: 10px;
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 5px solid var(--tema);
+}
+
+div.num span {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: var(--tema);
+}
+
+div.tema {
+    padding: 5px;
+    display: flex;
+    align-items: center;
+}
+
+div.tema p {
+    font-size: 0.85em;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.31);
+}
