@@ -1,0 +1,181 @@
+/* Estilos específicos para a página de temas */
+:root {
+    --cor-primaria: #02A9F0;
+    --cor-texto: #333;
+    --cor-fundo: #f8f9fa;
+    --cor-borda: #ddd;
+    --cor-hover: #f0f0f0;
+}
+
+body {
+    background-color: var(--cor-fundo);
+    color: var(--cor-texto);
+}
+
+header {
+    background: linear-gradient(to bottom, var(--cor-primaria), var(--cor-fundo));
+    padding-bottom: 150px;
+}
+
+.title h1 {
+    font-size: 4em !important;
+}
+
+.title h1, span {
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.355);
+}
+
+main {
+    margin: 0 20px;
+}
+
+section {
+    max-width: 1100px;
+    margin: 20px auto 40px;
+}
+
+/* Container dos temas em lista vertical */
+.lista-temas {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+/* Card individual do tema */
+.card-tema-vertical {
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s, box-shadow 0.2s;
+    border-left: 5px solid var(--cor-primaria);
+}
+
+.card-tema-vertical:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Número do tema */
+.num-tema {
+    background-color: var(--cor-primaria);
+    color: white;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    margin-right: 20px;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+/* Conteúdo do tema */
+.conteudo-tema {
+    flex-grow: 1;
+}
+
+.conteudo-tema h3 {
+    color: var(--cor-texto);
+    font-size: 1.3em;
+    margin-bottom: 5px;
+}
+
+.conteudo-tema p {
+    color: #666;
+    font-size: 0.95em;
+    margin-top: 5px;
+}
+
+/* Ações (botões PDF/Video) */
+.acoes-tema {
+    display: flex;
+    gap: 15px;
+    flex-shrink: 0;
+}
+
+.btn-acao {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 10px;
+    background-color: #f0f0f0;
+    transition: all 0.3s;
+}
+
+.btn-acao:hover {
+    transform: scale(1.1);
+}
+
+.btn-acao.pdf {
+    background-color: #d54f43;
+}
+
+.btn-acao.video {
+    background-color: #02A9F0;
+}
+
+.btn-acao img {
+    width: 24px;
+    height: 24px;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .card-tema-vertical {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 15px;
+    }
+    
+    .num-tema {
+        margin-right: 0;
+        margin-bottom: 15px;
+        width: 50px;
+        height: 50px;
+    }
+    
+    .acoes-tema {
+        margin-top: 15px;
+        align-self: flex-end;
+    }
+    
+    .conteudo-tema h3 {
+        font-size: 1.1em;
+    }
+}
+
+/* Voltar para disciplinas */
+.voltar-disciplinas {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+    color: var(--cor-primaria);
+    font-weight: 500;
+    padding: 10px 15px;
+    border-radius: 8px;
+    background-color: white;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.voltar-disciplinas span {
+    color: black;
+}
+
+.voltar-disciplinas:hover {
+    background-color: var(--cor-primaria);
+    color: white;
+}
+
+.voltar-disciplinas img {
+    width: 20px;
+    height: 20px;
+}
