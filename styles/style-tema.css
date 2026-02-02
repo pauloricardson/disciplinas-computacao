@@ -18,7 +18,8 @@ header {
 }
 
 .title h1 {
-    font-size: 4em !important;
+    font-size: 5em !important;
+    font-weight: 900;
 }
 
 .title h1, span {
@@ -115,7 +116,7 @@ section {
 }
 
 .btn-acao.pdf {
-    background-color: #d54f43;
+    background-color: #9869e9;
 }
 
 .btn-acao.video {

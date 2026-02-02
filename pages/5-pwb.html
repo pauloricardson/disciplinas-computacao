@@ -1,49 +1,57 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../../styles/styles.css">
-    <link rel="stylesheet" href="../../styles/temas.css">
-    <title>Programação Web</title>
+    <link rel="stylesheet" href="../styles/styles.css">
+    <link rel="stylesheet" href="../styles/style-tema.css">
+    <title>Linguagens de Programação</title>
 </head>
-
 <body>
     <header>
         <div class="header-content">
             <div class="header-top">
                 <div class="title">
-                    <h1>WEBI</h1>
-                    <span>Programação Web</span>
-                </div>
-                <div class="menu">
-                    <a href="../index.html"><img src="../src/images/home.svg" alt=""></a>
+                    <h1>PWB</h1>
+                    <span>Programação Web - 5º Semestre</span>
                 </div>
             </div>
-
         </div>
     </header>
+    
     <main>
         <section>
-            <div class="grid-disciplinas">
-                <div class="card-tema">
-                    <div class="num">
-                        <span>#001</span>
+            <!-- Link para voltar (opcional) -->
+            <a href="../index.html" class="voltar-disciplinas">
+                <img src="../src/images/arrow.svg" alt="Voltar">
+                <span>Voltar para Disciplinas</span>
+            </a>
+            
+            <h2 style="color: #000000; margin-bottom: 10px;">Temas da Disciplina</h2>
+            <p style="color: #666; margin-bottom: 30px;">Clique nos ícones para acessar os materiais de cada tema</p>
+            
+            <div class="lista-temas">
+                <!-- Tema 1 -->
+                <div class="card-tema-vertical">
+                    <div class="num-tema">
+                        <span>01</span>
                     </div>
-                    <div class="tema">
-                        <p>Apresentação da Disciplina</p>
+                    <div class="conteudo-tema">
+                        <h3>Apresentação da Disciplina</h3>
+                        <p>Introdução aos conceitos fundamentais de programação web</p>
                     </div>
-                    <div class="acoes">
-                        <a href="../contents/5pweb/001/001 - Apresentação da disciplina de Programação Web 1 (PWB1).pdf" target="_blank"><img src="../src/images/doc.svg" alt="pdf"></a>
-                        <a href="#" target="_blank"><img src="../src/images/video.svg" alt="video"></a>
+                    <div class="acoes-tema">
+                        <a href="../contents/5pweb/001/001 - Apresentação da disciplina de Programação Web 1 (PWB1).pdf" target="_blank" class="btn-acao pdf">
+                            <img src="../src/images/doc.svg" alt="PDF">
+                        </a>
+                        <a href="https://youtube.com/..." target="_blank" class="btn-acao video">
+                            <img src="../src/images/video.svg" alt="Vídeo">
+                        </a>
                     </div>
                 </div>
+                
             </div>
         </section>
-
     </main>
-
 </body>
-
 </html>
