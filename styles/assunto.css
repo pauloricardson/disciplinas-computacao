@@ -5,11 +5,6 @@
 header {
     background: transparent;
 }
-
-.header-content {
-    border-bottom: 1px solid black;
-}
-
 .header-content h1, span {
     color: black;
 }
@@ -20,52 +15,7 @@ header {
     padding: 5px;
 }
 
-
-div.grid-disciplinas {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 20px;
-    justify-content: center;
-    margin: 20px 0;
-}
-
-div.card-tema {
-    background-color: white;
-    border: 1px solid var(--tema);
-    height: 50px;
+.pdf embed {
     border-radius: 10px;
-    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.308);
-    display: flex;
-    justify-content: start;
-    margin: 15px 0;
-}
-
-div.num {
-    background-color: var(--tema);
-    height: 100%;
-    width: 70px;
-    border-radius: 10px;
-    padding: 5px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border: 1px solid var(--tema);
-}
-
-div.num span {
-    font-size: 1em;
-    font-weight: bold;
-    color: white;
-}
-
-div.tema {
-    padding: 5px;
-    display: flex;
-    align-items: center;
-}
-
-div.tema p {
-    font-size: 0.85em;
-    color: black;
-    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.31);
+    
 }
